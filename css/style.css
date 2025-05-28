@@ -1,66 +1,77 @@
 
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
   color: #333;
 }
-header {
-  background: #003366;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2342;
+  color: #fff;
+  padding: 15px 30px;
 }
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-nav {
-  margin-top: 10px;
-}
-nav a {
-  color: white;
-  margin: 0 10px;
+.navbar a {
+  color: #fff;
+  margin: 0 12px;
   text-decoration: none;
 }
 .hero {
-  background: linear-gradient(135deg, #dbe9f4, #e3f2fd);
+  height: 90vh;
+  background: linear-gradient(rgba(10,35,66,0.7), rgba(10,35,66,0.7)), url('../images/placeholder.txt');
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 60px 20px;
 }
 .hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 18px;
+  font-size: 3em;
   margin-bottom: 20px;
 }
-.cta {
-  padding: 10px 20px;
-  background-color: #003366;
+.hero p {
+  font-size: 1.2em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: #ff7e5f;
   color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
-  border-radius: 5px;
 }
-.services {
-  padding: 40px 20px;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: #fff;
+}
+.feature {
+  max-width: 300px;
+  margin: 20px;
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   text-align: center;
-}
-.services h2 {
-  margin-bottom: 30px;
-}
-.service-item {
-  background: #f0f8ff;
-  margin: 10px auto;
-  padding: 15px;
-  max-width: 400px;
-  border-radius: 8px;
-  font-size: 18px;
 }
 footer {
-  background: #333;
-  color: #aaa;
+  background: #0a2342;
+  color: #ccc;
   text-align: center;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
 }
